@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>私影社太原化妆培训学校 太原化妆学校 太原学化妆 太原最好的化妆学校 太原美睫培训 太原半永久培训</title><link type="text/css" rel="stylesheet" href="style.css" tppabs="http://www.siyingshe.com/3g/templates/default/style.css"><script type="text/javascript" src="jquery-1.9.0.min.js" tppabs="http://www.siyingshe.com/3g/templates/default/js/jquery-1.9.0.min.js"></script><script type="text/javascript" src="jquery.touchslider.js" tppabs="http://www.siyingshe.com/3g/templates/default/js/jquery.touchslider.js"></script><script type="text/javascript">$(function(){
+		$("#gengduo_button").click(function(){
+			var num=5;//显示个数
+			var page=$("#gengduo_button").attr('page');//第几个分页
+			var nodata=$("#gengduo_button").attr('nodata');//判断是否有数据
+			if(page){
+				page=parseInt(page);
+				}else{
+					page=1;
+					}
+			var type='';//新闻所属分类
+			var lanmu='1';//新闻所属栏目
+			//$("#test").text("栏目:"+lanmu+"数量:"+num+"类型:"+type+"分页:"+page);
+			if(lanmu){
+				if(nodata!=="no"){
+					$.post("http://www.siyingshe.com/3g/action/news_list_ajax.php",{news_num:num,news_page:page,news_type:type,news_lanmu:lanmu},function(data){
+					if(data){
+						if(data=="2"){
+							alert("服务器错误，请稍后重试！");
+							}else{
+								if(data=="1"){
+									alert("没有更多数据了！");
+									$("#gengduo_button").attr('nodata','no');
+									}else{
+										$(".News_list").append(data);
+										page=page+1;
+										$("#gengduo_button").attr('page',page);
+										}
+								}
+						}else{
+							alert("网络错误，请稍候重试！")
+							}
+					})
+					}else{
+						alert("没有更多数据了！");
+						}
+				}else{
+					alert("请求参数不正确！");
+					}
+			})
+		})</script></head><body><div class="box_main"><div class="header"><div id="logo"><a href="index.php.htm" tppabs="http://www.siyingshe.com/3g/index.php"><img src="20150722111039_47164.png" tppabs="http://www.siyingshe.com/uploadfile/image/20150722/20150722111039_47164.png"></a></div><div class="tool"><a id="tubiao"><img src="fl.png" tppabs="http://www.siyingshe.com/3g/templates/default/img/fl.png"></a></div><div style="clear:both"></div></div><script type="text/javascript">$(document).ready(function(e) {
+	$("#tubiao").bind("click",function (){
+		$("#ceng").toggle(500);
+		$("#ceng").css(document.body.scrollHeight);
+		})
+		$("#close").bind("click",function (){
+		$("#ceng").toggle(500);
+		
+		})
+    });</script><div id="ceng" style="display:none; width:100%; height:100%;z-index:100;position:absolute; z-index:9999999; top:0;  right:0; bottom:0"><div id="close" style="width:55%; background:#444;height:100%; float:left; background-color:rgba(0, 0, 0, 0.5)"><img src="close.png" tppabs="http://www.siyingshe.com/3g/templates/default/img/close.png" style="padding:15px"></div><div style="width:45%;background:#282525;height:100%; float:left" class="type"><ul><li><a href="index.php.htm" tppabs="http://www.siyingshe.com/3g/index.php">网站首页</a></li><li><a href="index.php-p=about&lanmu=3&id=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=about&lanmu=3&id=1">美学文化</a></li><li><a href="index.php-p=products_list&lanmu=9.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=products_list&lanmu=9">作品展示</a></li><li><a href="index.php-p=news_list&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_list&lanmu=1">动态资讯</a></li><li><a href="index.php-p=products_list&lanmu=10.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=products_list&lanmu=10">师资团队</a></li><li><a href="index.php-p=about&lanmu=8&id=16.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=about&lanmu=8&id=16">化妆造型</a></li><li><a href="index.php-p=about&lanmu=13&id=8.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=about&lanmu=13&id=8">摄影培训</a></li><li><a href="index.php-p=about&lanmu=14&id=9.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=about&lanmu=14&id=9">美甲美睫</a></li><li><a href="index.php-p=products_list&lanmu=11.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=products_list&lanmu=11">实践活动</a></li><li><a href="index.php-p=news_list&lanmu=15.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_list&lanmu=15">优惠活动</a></li><li><a href="index.php-p=about&lanmu=7&id=3.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=about&lanmu=7&id=3">联系我们</a></li></ul></div></div><!--分类--><div class="home clearfix"><div class="back"><a href="index.php.htm" tppabs="http://www.siyingshe.com/3g/index.php"><img src="img16.png" tppabs="http://www.siyingshe.com/3g/templates/default/img/img16.png"></a></div>新闻资讯 <span class="type"><a href="javascript:showmenu();" style="float:right; padding-top:2%"><img src="img15.png" tppabs="http://www.siyingshe.com/3g/templates/default/img/img15.png"></a></span><div class="clear"></div><div id="menu"><div class="menu_box"><li><a href="index.php-p=news_list&c_id=2&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_list&c_id=2&lanmu=1">新闻速递</a></li><li><a href="index.php-p=news_list&c_id=1&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_list&c_id=1&lanmu=1">行业动态</a></li></div></div></div><script language="javascript">function showmenu() { menu.style.visibility = "visible"; }
+        function hidmenu() { menu.style.visibility = "hidden"; }
+        document.onclick = hidmenu;</script><!--分类--><article><div class="sub_title"><a href="index.php.htm" tppabs="http://www.siyingshe.com/3g/index.php">首页</a>-新闻资讯</div><div class="News_list"><div class="list"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="20%"><a href="index.php-p=news_show&id=131&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=131&lanmu=1"><img src="20170218174820_18138.jpg" tppabs="http://www.siyingshe.com/uploadfile/image/20170218/20170218174820_18138.jpg" width="80%"></a></td><td width="80%"><h3><a href="index.php-p=news_show&id=131&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=131&lanmu=1" title=""><span class="mr">&middot; 2017开年太原化妆学校私影社新班已经开课</span><br><span class="time">2017-02-18</span></a></h3></td></tr></table></div><div class="list"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="20%"><a href="index.php-p=news_show&id=130&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=130&lanmu=1"><img src="" width="80%"></a></td><td width="80%"><h3><a href="index.php-p=news_show&id=130&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=130&lanmu=1" title=""><span class="mr">&middot; 太原化妆培训学校十佳学校私影社美学教育榜上有名</span><br><span class="time">2016-11-01</span></a></h3></td></tr></table></div><div class="list"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="20%"><a href="index.php-p=news_show&id=129&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=129&lanmu=1"><img src="20161012084221_20679.jpg" tppabs="http://www.siyingshe.com/uploadfile/image/20161012/20161012084221_20679.jpg" width="80%"></a></td><td width="80%"><h3><a href="index.php-p=news_show&id=129&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=129&lanmu=1" title=""><span class="mr">&middot; 太原韩式半永久纹绣培训来私影社 教学品质的保证是她们的特色</span><br><span class="time">2016-10-12</span></a></h3></td></tr></table></div><div class="list"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="20%"><a href="index.php-p=news_show&id=128&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=128&lanmu=1"><img src="20160714170439_31952.jpg" tppabs="http://www.siyingshe.com/uploadfile/image/20160714/20160714170439_31952.jpg" width="80%"></a></td><td width="80%"><h3><a href="index.php-p=news_show&id=128&lanmu=1.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=news_show&id=128&lanmu=1" title=""><span class="mr">&middot; 太原化妆培训学校私影社化妆实践活动现场</span><br><span class="time">2016-07-14</span></a></h3></td></tr></table></div></div><div style="clear:both"></div><div id="new_s" style="text-align:center"></div><div class="sub_more"><div style="margin:0 auto; text-align:center; padding:10px 0"><input name="更多" type="button" id="gengduo_button" page="2" value="显示更多"></div></div></article><div class="bq"><ul><li><a href="index.php.htm" tppabs="http://www.siyingshe.com/3g/index.php"><img src="q1.jpg" tppabs="http://www.siyingshe.com/3g/templates/default/img/q1.jpg"></a></li><li><a href="tel:13935140765"><img src="q2.jpg" tppabs="http://www.siyingshe.com/3g/templates/default/img/q2.jpg"></a></li><li><a href="sms:13935140765"><img src="q3.jpg" tppabs="http://www.siyingshe.com/3g/templates/default/img/q3.jpg"></a></li><li><a href="index.php-p=fenxiang.htm" tppabs="http://www.siyingshe.com/3g/index.php?p=fenxiang"><img src="q4.jpg" tppabs="http://www.siyingshe.com/3g/templates/default/img/q4.jpg"></a></li><div style="clear:both"></div></ul></div><script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F95a92e857baba314f4f605216f952d16' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript" charset="utf-8" async src="lxb.js-sid=8503568" tppabs="http://lxbjs.baidu.com/lxb.js?sid=8503568"></script></div></body></html>

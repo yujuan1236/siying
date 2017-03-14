@@ -1,0 +1,1 @@
+$(function(){$("#Banner").touchSlider({mouseTouch:!0,autoplay:!0});var i=$(window).innerWidth();$("#Banner>ul>li>img").width(i);var e=234*i/640;$(".touchslider-viewport").height(e),$(".touchslider-item").height(e),$(".touchslider-item>img").height(e)});
